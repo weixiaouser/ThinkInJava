@@ -1,0 +1,17 @@
+*.swp
+*.class
+eclipse
+nbproject
+.settings
+.project
+.classpath
+out
+*/out
+target
+*/target
+.idea
+*.ipr
+*.imr
+*.iws
+*.iml
+*.ids
