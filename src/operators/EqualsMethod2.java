@@ -7,10 +7,7 @@ package operators;
 class Value{
     int i;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 08bd2968c394e45ee13bff8308dda5472f44689e
 public class EqualsMethod2 {
     public static void main(String[] args) {
         Value v1 = new Value();
