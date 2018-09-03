@@ -1,4 +1,6 @@
-package polymorphism;
+package polymorphism2;
+
+import polymorphism.Note;
 
 /**
  * Created by weixiao on 2018/8/12.
