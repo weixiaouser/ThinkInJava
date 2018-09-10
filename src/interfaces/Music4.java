@@ -42,7 +42,7 @@ class Stringed extends Instrument{
     public void adjust(){}
 }
 
-class Brass extends Wind{
+class Brass extends Wind {
     public void play(Note n){
         System.out.println("Brass.play()"+n);
     }
@@ -51,7 +51,7 @@ class Brass extends Wind{
     }
 }
 
-class WoodWind extends Wind{
+class WoodWind extends Wind {
     public void play(Note n){
         System.out.println("WoodWind.play()" +n);
     }
