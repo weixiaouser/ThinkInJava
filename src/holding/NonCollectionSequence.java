@@ -34,5 +34,5 @@ public class NonCollectionSequence extends PetSequence{
         InterfaceVsIterator.display(nc.iterator());
     }
 }/*output:
-0:Rat 1:Manx 2:Cymric 3:Mutt 4:Pug 5:Cymric 6:Pug 7:Manx 
+0:Rat 1:Manx 2:Cymric 3:Mutt 4:Pug 5:Cymric 6:Pug 7:Manx
 */
