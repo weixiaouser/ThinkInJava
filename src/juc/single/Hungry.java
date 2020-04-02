@@ -9,13 +9,13 @@ package juc.single;
  */
 public class Hungry {
 
-    private static final Hungry hungry = new Hungry();
+    private final static  Hungry hungry = new Hungry();
     //单例模式的核心思想就是构造器私有
     private Hungry(){
 
     }
 
-    public Hungry getInstance(){
+    public static Hungry getInstance(){
         return hungry;
     }
 }
