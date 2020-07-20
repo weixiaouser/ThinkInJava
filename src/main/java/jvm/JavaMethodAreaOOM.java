@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 
 /**
  * @author :weixiao
- * @description :
+ * @description :CGLib使得方法区出现内存溢出
  * @date :2020/4/8 14:08
  */
 public class JavaMethodAreaOOM {
@@ -22,13 +22,21 @@ public class JavaMethodAreaOOM {
             enhancer.setCallback(new MethodInterceptor() {
                 @Override
                 public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-                    return methodProxy.invokeSuper(o,args);
+                    System.out.println("before");
+                    Object res = methodProxy.invokeSuper(o,args);
+                    System.out.println("after");
+                    return res;
                 }
             });
-            enhancer.create();
+           OOMObject oom = (OOMObject) enhancer.create();
+           oom.print();
         }
     }
     static class OOMObject{
+
+        void print(){
+            System.out.println("hhhhhasd");
+        }
 
     }
 }
